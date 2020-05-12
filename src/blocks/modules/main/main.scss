@@ -1,0 +1,75 @@
+//  .main{
+//  background:#ccc;
+// }
+
+.content{
+  padding-top: 60px;
+  }
+
+h1{
+    @include fonts($font-regular,35px,$d2-4);
+}
+
+h2{
+    @include fonts($font-regular,33px,$d2-4);  
+}
+
+h3{
+    @include fonts($font-regular,27px,$d2-4);
+}
+h4{
+    @include fonts($font-regular,22px,$d2-4);
+}
+h5{
+    @include fonts($font-regular,17px,$d2-4);
+}
+h6{
+    @include fonts($font-regular,15px,$d2-4);
+}
+p{ @include fonts($font-regular,14px,$pr-4);
+    line-height: 2;
+}
+.subtitle{
+    @include fonts($font-regular,20px,$pr-4);
+  line-height: 1.5;}
+
+ .list-1, .list-2{@include width(2,2%)};
+
+ .blue-bg-text p{
+    @include fonts($font-regular,17px,$pr-1);
+    background-color: $l3-1;
+    padding:5px 40px;
+    line-height:2;
+}
+
+.blue-check{
+ @include fonts($font-regular,15px,$d2-4);
+line-height: 2;
+list-style-type: none;
+& i {color: $pr-1;
+    margin-right: 10px;
+}
+}
+.orange-check{
+    @include fonts($font-regular,15px,$d2-4);
+line-height: 2;
+list-style-type: none;
+& i {color: $pr-2;
+    margin-right: 10px;
+}
+}
+ .text-column{
+    column-count:2;
+ }
+
+ 
+ @media (max-width: 768px) {
+    .content{
+        padding-top: 20px;
+        }
+    .list{display: flex;
+        flex-direction: column;}  ;
+    .text-column{
+    column-count:1;
+ }
+ }

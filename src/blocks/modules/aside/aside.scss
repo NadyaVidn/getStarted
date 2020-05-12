@@ -1,0 +1,255 @@
+.aside{padding-top: 60px;}
+
+form {
+    position: relative;
+    border: 2px solid $l2-4;
+    height: 100%;
+    width: 100%;
+}
+input {
+    @include fonts($font-regular,14px,$pr-4);
+    width: 100%;
+    height: 50px;
+    background: $l3-4;
+    padding-left: 20px;
+    border: none;
+}
+  button {
+    font-size: 15px;
+    position: absolute;
+    height: 50px;
+    background: $l3-4;
+    border: none;
+    margin-left: -40px;
+    & .search-icon {
+        font-size: 15px;
+        color: $l1-4;
+    }
+  }
+  section{
+ 
+    & h2 {
+        @include fonts($font-bold, 15px, $d1-1);
+        border-bottom: 1px solid $d1-1;
+        text-transform: uppercase;
+        margin-top: 30px;
+        padding-bottom: 35px;
+    }
+    & ul li { 
+    list-style-type: none;
+    background-color: $l3-1;
+    color: $d1-4;
+    padding: 15px;
+    border-bottom: 1px solid $l2-1;}
+
+    & i {color:$pr-1;
+    padding-right:10px;}
+}
+
+    #categories ul li{
+    text-transform: uppercase;
+    }
+
+
+    #latest-blogs{
+
+    & #data{@include fonts($font-regular, 12px, $l2-4);
+        border-bottom: 1px solid $pr-1;
+        padding-bottom: 20px;}
+
+    & .clock-icon {
+        padding-right: 5px;
+        font-size: 15px;
+        color: $l2-4;};
+
+    & figure {margin-left: 0;
+        margin-right: 0;};
+
+    & figure img {width: 100%;};
+
+    & figcaption{@include fonts($font-bold, 15px, $d3-4);
+    margin-top: 20px;}
+}
+
+    #we-accept{
+       & .photo{
+           padding-top: 30px;
+           padding-bottom: 40px;
+           flex-wrap: wrap;}
+    
+    & img {
+        margin: 0;
+        padding: 3px 0 0 5px;}}
+   
+    .button-order{
+        @include fonts($font-bold, 15px, $l3-1);
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background: $d1-1;   
+}
+
+#baner{
+    & .bg-baner{background-color: $pr-1;
+    width: 100%;
+height: 350px;}
+& .Rectangle {
+   margin-bottom: 25px;
+   margin-top: -50px;
+    width: 60%;
+    max-height: 150px;
+    background-color: $d1-1;
+border: 2px dashed $l3-1;
+border-radius: 12px;
+& .text-1{@include fonts($font-bold, 14px, $l3-1);
+padding-top: 20px;}
+& .text-2{@include fonts($font-bold, 22px, $l1-3)};
+& .text-3{@include fonts($font-regular, 14px, $l3-1);
+    text-transform: uppercase;}
+}
+& .boy{
+    position: relative;
+    top: 0px;
+    left:-40px;}
+& img{max-width: 200px;}}
+
+
+
+ #our-advantages ul li, #features ul li {
+     background-color: inherit;
+    border-bottom: none;
+}
+#features h2{padding-top: 60px;}
+
+#discounts
+{margin-bottom: 120px;
+    margin-top: 60px;
+& .off { @include fonts($font-bold, 20px, $l3-3);
+ position: relative;
+ top:50px;
+ right: 55px;
+ }
+ & .off-blue { @include fonts($font-bold, 20px, $l1-3);
+    position: relative;
+   top:50px;
+   right: 60px;
+   } 
+   .p1 {padding-top: 50px;}
+ }
+ #burst-12 {
+  margin-top: 40px;
+   margin-bottom: 40px;
+   background:$pr-2;
+ min-width: 80px;
+height: 80px;
+position: relative;
+ }   
+
+#burst-12:before,
+#burst-12:after {
+  content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 80px;
+ min-width: 80px;
+ background: $pr-2;
+ }
+
+ #burst-12:before {
+  transform: rotate(30deg);
+}
+ #burst-12:after {
+    transform: rotate(60deg);
+  }
+       
+ 
+ .blue-discount {
+   & #burst-12 {background:$pr-1};
+   & #burst-12:before,
+     #burst-12:after { background:$pr-1};
+   & span:nth-of-type(1) {@include fonts($font-bold, 14px, $pr-4)};
+   & span:nth-of-type(2) {@include fonts($font-bold, 22px, $d1-4)}
+    }
+  .orange-discount {
+       & span:nth-of-type(2) {@include fonts($font-bold, 22px, $d1-4)};
+       & span:nth-of-type(1) {@include fonts($font-bold, 14px, $pr-4)}
+  }
+  
+    
+
+
+
+ @media (max-width: 990px){
+        #burst-12 {
+        min-width: 60px;
+        height: 60px; }   
+          
+          #burst-12:before,
+          #burst-12:after {
+           height: 60px;
+           min-width: 60px;
+          }
+          #discounts{margin-bottom: 120px;
+            margin-top: 60px;
+        & .off { @include fonts($font-bold, 20px, $l3-3);
+         position: relative;
+         top:40px;
+         right: 45px;
+         }
+         & .off-blue { @include fonts($font-bold, 20px, $l1-3);
+            position: relative;
+           top:40px;
+           right: 50px;
+           }
+           .p1 {padding-top: 20px;} 
+        }
+           .blue-discount {
+         
+            & span:nth-of-type(1) {@include fonts($font-bold, 14px, $pr-4)};
+            & span:nth-of-type(2) {@include fonts($font-bold, 17px, $d1-4)}
+         }
+         .orange-discount {
+                    
+             & span:nth-of-type(2) {@include fonts($font-bold, 17px, $d1-4)};
+            & span:nth-of-type(1) {@include fonts($font-bold, 14px, $pr-4)}
+                       
+              }
+
+              #baner{
+            & .Rectangle {
+            & .text-1{@include fonts($font-bold, 10px, $l3-1);
+            padding-top: 20px;
+        text-align: center;}
+            & .text-2{@include fonts($font-bold, 15px, $l1-3);
+                text-align: center;};
+            & .text-3{@include fonts($font-regular, 10px, $l3-1);
+                text-align: center;
+                text-transform: uppercase;}
+            }
+        .boy img{max-width: 156px;
+        margin-left: 40px;}}
+        }
+                  
+            
+ @media (max-width: 768px){ 
+                input {
+                    @include fonts($font-regular,12px,$pr-4)}
+                   #categories ul li{
+                font-size: 10px;
+                }
+                #baner{
+                .boy img{max-width: 100px;
+                    margin-left: 40px;}}
+                    
+               }
+ @media (max-width: 576px) {
+         .sm{
+             margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: space-between;
+align-items:center;}
+         }  
+    

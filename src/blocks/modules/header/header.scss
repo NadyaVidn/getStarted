@@ -1,0 +1,188 @@
+
+// @mixin back($bg-color){
+   
+// @if($bg-color == #000){ 
+// background: $bg-color;
+// color:#fff;
+// }
+
+// @else{
+//     background: $bg-color;
+//     color: #000;
+// }
+// }
+// div{
+//     @include back(pink);
+// margin: 25px;
+// padding: 15px;
+// }
+
+// @for $i from 1 to 6{
+// .test-#{$i}{
+//      width: 400px;
+//  background-color: #ccc;
+// font-size: 18px;
+// margin-bottom: 15px;
+// }
+// }
+// @mixin width ($column,$margin){
+//     $w:(100%/$column)-($margin*2);
+//     width:$w;
+//     float: left;
+//     margin: $margin;
+//     text-align: justify;
+// }
+    
+
+// div{
+//     @include width(5,2%);
+
+// }
+// .container
+// {margin: auto}
+
+.mnBar{
+background-color: $pr-1;
+padding: 20px;}
+
+.logo {line-height: 1;}
+
+.mnBar img{
+padding-right: 10px;
+}
+
+.mnBar span span:nth-of-type(1){
+@include fonts($font-regular,20px,$pr-3);
+}
+
+.mnBar span
+{@include fonts($font-Gabriola,39px,$l3-3);  
+}
+
+.mnBar span span:nth-of-type(2)
+{@include fonts($font-regular,12px,$l3-3);
+}
+
+.mnBar span:nth-of-type(2)
+{@include fonts("OpenSans",13px,$l3-3)
+}
+
+ .mnBar-nav ul li{
+ list-style-type: none;  
+
+& a {@include fonts($font-medium,10px,$l3-3); 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 20px;}
+& a:hover {color:$d1-4;}
+& i {padding-left: 5px;}
+
+& .circle {
+    border-radius: 50%;
+    border: solid 1px $l3-3;
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+}
+}
+
+ .btn_sign_in { 
+ font-family:'OpenSansSemibold';
+ background-color:$d1-1;  
+ border-radius: 4px;
+ width: 120px;
+ height: 50px;
+
+}
+.btn_order { 
+    font-family:'OpenSansSemibold';
+    background-color:$pr-2;  
+    border-radius: 4px;
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    
+   }
+   
+  #burger-menu  {
+   margin-left: 20px;
+   font-size: 30px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 576px) { 
+     .btn_sign_in { 
+         width: 50px;
+         height: 30px;
+                
+        }
+        & .circle {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+        }
+        .btn_order { 
+          width: 50px;
+            height: 30px;
+            margin-left: 5px;                   
+         }
+            #burger-menu  {
+           margin-left: 5px;
+                 
+        } 
+    .mnBar-nav ul li{
+        justify-content: center;
+       
+       & a {padding-right: 5px;}
+       & i {padding-left: 0px;}}
+       }
+
+// Малые девайсы («ландшафтные», < 768px)
+ @media (max-width: 768px) {  
+    .btn_sign_in { 
+         width: 90px;
+        height: 40px;
+               
+       }
+       .btn_order { 
+         width: 90px;
+           height: 40px;
+           margin-left: 5px;                    }
+           #burger-menu  {
+            margin-left: 5px;
+            font-size: 30px;
+                
+       }
+       .mnBar-nav ul li{
+        justify-content: center;
+        list-style-type: none; 
+    
+       
+       & a {padding-right: 9px;}
+       & i {padding-left: 0px;}}
+       
+}
+  
+// Средние девайсы («таблетки», < 992px) 
+@media (max-width: 990px) { 
+    .logo{justify-content: center;
+    margin-bottom: 40px;}
+    .mnBar-nav ul li{
+        justify-content: center;
+       
+       & a {
+           padding-right: 15px;}
+      
+       & i {padding-left: 5px;}}
+       
+}
+@media (max-width: 1200px) {
+     .mnBar-nav ul li{
+    
+   & a {
+       padding-right: 10px;}
+  
+   }
+}
+
+

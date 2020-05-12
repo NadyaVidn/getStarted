@@ -1,0 +1,108 @@
+.footer{background-color: $pr-1;
+    padding: 20px;}
+
+    .logo {line-height: 1;}
+    .footer img{
+        padding-right: 10px;
+        }
+        .padding-logo{margin-bottom: 30px;}
+        
+        .footer span span:nth-of-type(1){
+        @include fonts($font-regular,20px,$pr-3);
+        }
+        
+        .footer span
+        {@include fonts($font-Gabriola,39px,$l3-3);  
+        }
+        
+        .footer span span:nth-of-type(2)
+        {@include fonts($font-regular,12px,$l3-3);
+        }
+        
+        .footer span:nth-of-type(2)
+        {@include fonts("OpenSans",13px,$l3-3);
+        }
+        
+         .footer-nav ul li{
+         list-style-type: none;  
+         padding-top: 10px; 
+        & a {@include fonts($font-medium,12px,$l3-3); 
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-right: 25px;}
+        & a:hover {color:$d1-4;}
+       }
+.section{border-top: 1px solid $l1-1;
+border-bottom:1px solid $l1-1 ;
+padding-top:30px;
+padding-bottom:30px;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+       .section-1,.section-2,.section-3,.section-4{
+        padding: 40px;
+       
+           line-height: 2;
+           text-align: justify;
+
+    }
+
+           .section ul {padding-bottom: 20px;
+           @include fonts($font-medium,15px,$l3-3);}
+
+           .section li {list-style-type: none;
+            @include fonts($font-light,15px,$l3-3);   
+        }
+
+        .contacts{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+
+          & p {
+            @include fonts($font-light,13px,$l3-3)
+        }
+        & a {
+            @include fonts($font-light,14px,$l3-3);	
+        }
+        & i {
+            font-size: 20px}
+    
+        & .circle{
+            margin:0;
+            border-radius: 50%;
+            border: solid 1px $l3-3;
+            width: 50px;
+            height: 50px;
+            padding: 14px;
+        }
+        & .tel p:last-child {font-weight: bold;}
+        & a:hover {color:$d1-4;}
+    }
+    .phone-icon{margin-right: 20px;}
+    .icon{margin: 5px;}
+
+
+    @media (max-width: 768px){
+        .section{
+            
+        padding-top:10px;
+        padding-bottom:10px;
+              } 
+              .contacts{
+        justify-content: center;
+            }
+        }
+    
+     @media (max-width: 576px) {
+
+    .footer-nav ul li{
+    & a {@include fonts
+     ($font-medium,9px,$l3-3)}
+                        }
+                    }
+          
+   
+    
+      

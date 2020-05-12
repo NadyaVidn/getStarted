@@ -1,0 +1,35 @@
+
+.banner{
+    padding-top: 100px;
+    background: url(../img/town.png) center repeat-x $l3-1;
+    height: 270px;
+
+    & h1 { @include fonts($font-bold, 40px,$d3-4)
+       }
+    & ul li{
+    list-style-type: none;
+        }
+    & a{
+        @include fonts($font-medium,12px,$pr-4);
+        text-decoration: none;
+        margin-right: 15px;
+        text-transform: uppercase;}
+
+     & a:hover{color:$d3-4;}
+    
+     & i{
+      color: $pr-4;
+        margin-left: 10px; 
+        }
+     & span{
+        @include fonts($font-medium,12px,$d3-4); 
+        text-transform: uppercase;
+        }
+    
+}
+
+  
+@media (max-width: 768px) {   
+   .banner{
+   & h1 { @include fonts($font-bold, 30px,$d3-4)}}
+}

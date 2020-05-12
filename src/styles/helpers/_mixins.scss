@@ -1,0 +1,11 @@
+@mixin fonts($font,$font-size,$color) {
+    font-family: $font;
+    font-size: $font-size;
+    color: $color;
+}
+@mixin width ($column,$margin){
+    $w:(100%/$column)-($margin*2);
+     width:$w;
+    float: left;
+   margin: $margin;
+   }
